@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import { Home, Navbar, Demos } from './components';
+import { Navbar } from './components'; 
+import { Home, Demos, NotFoundPage } from './pages'
 import { Route, Routes } from 'react-router';
-import { NotFoundPage } from './components/NotFoundPage';
 
 function App() {
   return (

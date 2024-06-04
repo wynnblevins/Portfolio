@@ -1,3 +1,2 @@
-export * from "./Home"
-export * from "./Demos"
-export * from "./Navbar"
+export * from './DemoSquare';
+export * from './Navbar';
