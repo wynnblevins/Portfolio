@@ -13,7 +13,6 @@ function App() {
         <Route path="/portfolio" element={<Home />}></Route>
         <Route path="/home" element={<Home/>}></Route>
         <Route path='/demos' element={<Demos />}></Route>
-        <Route path='*' element={<NotFoundPage />}></Route>
       </Routes>
     </div>
   );
