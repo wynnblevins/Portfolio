@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Home, Navbar, Portfolio } from './components';
+import { Home, Navbar, Demos } from './components';
 import { Route, Routes } from 'react-router';
 import { NotFoundPage } from './components/NotFoundPage';
 
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
-        <Route path='/demos' element={<Portfolio />}></Route>
+        <Route path='/demos' element={<Demos />}></Route>
         <Route path='*' element={<NotFoundPage />}></Route>
       </Routes>
     </div>

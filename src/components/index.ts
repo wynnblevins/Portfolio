@@ -1,3 +1,3 @@
 export * from "./Home"
-export * from "./Portfolio"
+export * from "./Demos"
 export * from "./Navbar"
