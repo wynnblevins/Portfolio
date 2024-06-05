@@ -7,6 +7,7 @@ import guitarImg from "../images/MemoryGame.jpg";
 import triviaImg from "../images/trivia.png";
 import hangmanImg from "../images/hangman.png";
 import brainImg from "../images/brain-resized.png";
+import starWarsImg from "../images/star_wars_logo_resized.png";
 import { Demo, DemoSquare } from '../components/DemoSquare';
 
 
@@ -58,16 +59,15 @@ const DemosBase = (props: Props) => {
       image: hangmanImg
     },
     {
-      url: 'https://wynnblevins.github.io/Hangman-Game/',
-      label: 'Hangman',
-      image: hangmanImg
-    },
-    {
       url: 'https://github.com/wynnblevins/LiriNodeApp',
       label: 'LIRI',
       image: brainImg
+    },
+    {
+      url: 'https://wynnblevins.github.io/Star-Wars-Game',
+      label: 'Star Wars RPG',
+      image: starWarsImg
     }
-
   ];
   
   return (
