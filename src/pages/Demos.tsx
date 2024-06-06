@@ -1,5 +1,6 @@
 import React from 'react';
 import { WithStyles, withStyles, Grid } from "@material-ui/core";
+import { Demo, DemoSquare } from '../components/DemoSquare';
 import fizzbuzzImg from '../images/fizzbuzz.jpg';
 import primeNumberImg from "../images/PrimeNumbers.jpg";
 import fibonacciImg from "../images/Fibonacci.jpg";
@@ -8,7 +9,7 @@ import triviaImg from "../images/trivia.png";
 import hangmanImg from "../images/hangman.png";
 import brainImg from "../images/brain-resized.png";
 import starWarsImg from "../images/star_wars_logo_resized.png";
-import { Demo, DemoSquare } from '../components/DemoSquare';
+import giphyLogoImg from "../images/giphy_logo_resized.png";
 
 
 interface Props extends WithStyles {};
@@ -49,7 +50,7 @@ const DemosBase = (props: Props) => {
       image: guitarImg
     },
     {
-      url: 'https://wynnblevins.github.io/Trivia-Game',
+      url: 'https://wynnblevins.github.io/trivia-blitz',
       label: 'Trivia Blitz',
       image: triviaImg
     },
@@ -67,7 +68,12 @@ const DemosBase = (props: Props) => {
       url: 'https://wynnblevins.github.io/Star-Wars-Game',
       label: 'Star Wars RPG',
       image: starWarsImg
-    }
+    },
+    {
+      url: 'https://wynnblevins.github.io/GiphyBrowser',
+      label: 'Giphy Browser',
+      image: giphyLogoImg
+    },
   ];
   
   return (
