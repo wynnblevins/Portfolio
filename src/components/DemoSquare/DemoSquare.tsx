@@ -17,12 +17,12 @@ const styles = {
     width: "300px"
   },
   demoSquareImg: {
-    height: "300px !important",
-    width: "300px !important"
+    height: "200px !important",
+    width: "200px !important"
   },
   demoSquareA: {
-    height: "300px",
-    width: "300px"
+    height: "200px",
+    width: "200px"
   }
 }
 

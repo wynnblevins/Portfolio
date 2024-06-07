@@ -27,9 +27,9 @@ function Navbar() {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-
+        <Toolbar  disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            {/* This is the mobile toolbar interface */}
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -68,6 +68,7 @@ function Navbar() {
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {/* This is the desktop browser toolbar interface */}
             {pages.map((page) => (
               <Button
                 key={page}

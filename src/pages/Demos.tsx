@@ -18,7 +18,8 @@ const styles = {
   demosContainer: {
     paddingLeft: "40px",
     paddingRight: "40px",
-    marginLeft: "100px"
+    marginLeft: "15px",
+    width: "auto"
   },
   demoBox: {
     marginTop: "40px"
