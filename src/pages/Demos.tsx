@@ -10,7 +10,7 @@ import hangmanImg from "../images/hangman.png";
 import brainImg from "../images/brain-resized.png";
 import starWarsImg from "../images/star_wars_logo_resized.png";
 import giphyLogoImg from "../images/giphy_logo_resized.png";
-
+import computerVisionImg from "../images/eye.jpg";
 
 interface Props extends WithStyles {};
 
@@ -74,6 +74,11 @@ const DemosBase = (props: Props) => {
       label: 'Giphy Browser',
       image: giphyLogoImg
     },
+    {
+      url: 'https://wynnblevins.github.io/object-detection',
+      label: 'Object Detection',
+      image: computerVisionImg
+    }
   ];
   
   return (
