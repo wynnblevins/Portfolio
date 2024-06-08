@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio/static/js/main.60941cc0.js",
+    "main.css": "/portfolio/static/css/main.153790cb.css",
+    "main.js": "/portfolio/static/js/main.f07a50b2.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/eye.jpg": "/portfolio/static/media/eye.8455fdaa0c854911d822.jpg",
     "static/media/PrimeNumbers.jpg": "/portfolio/static/media/PrimeNumbers.8d16f231a9c1824d5e5a.jpg",
@@ -12,12 +12,12 @@
     "static/media/star_wars_logo_resized.png": "/portfolio/static/media/star_wars_logo_resized.7d63b1c6551bb389357d.png",
     "static/media/brain-resized.png": "/portfolio/static/media/brain-resized.2c65b55cb39b1dee8a33.png",
     "index.html": "/portfolio/index.html",
-    "main.f855e6bc.css.map": "/portfolio/static/css/main.f855e6bc.css.map",
-    "main.60941cc0.js.map": "/portfolio/static/js/main.60941cc0.js.map",
+    "main.153790cb.css.map": "/portfolio/static/css/main.153790cb.css.map",
+    "main.f07a50b2.js.map": "/portfolio/static/js/main.f07a50b2.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.60941cc0.js"
+    "static/css/main.153790cb.css",
+    "static/js/main.f07a50b2.js"
   ]
 }
