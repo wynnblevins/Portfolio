@@ -3,10 +3,10 @@ import { Container, WithStyles, withStyles } from "@material-ui/core";
 
 const styles = {
   mainWrapper: {
-    
-  },
-  innerBox: {
-    
+    height: "100%",
+    paddingTop: "20%",
+    paddingLeft: "10%",
+    paddingRight: "10%"
   }
 }
 
@@ -17,9 +17,7 @@ const MainSectionComponent = (props: MainSectionProps) => {
 
   return (
     <div className={classes.mainWrapper}>
-      <div className={classes.innerBox}>
-        <h1>Main Section</h1>
-      </div>
+      <h1>Main Section</h1>
     </div>
   )
 };

@@ -1,14 +1,10 @@
 import React from 'react';
 import './App.css';
-import { Navbar } from './components'; 
+import { Footer, Navbar } from './components'; 
 import { Home, Demos } from './pages'
 import { Route, Routes } from 'react-router';
-import { withStyles } from '@material-ui/core';
 
-const styles = {
-}
-
-function AppComponent() {
+function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
@@ -20,10 +16,9 @@ function AppComponent() {
           <Route path='/portfolio/demos' element={<Demos />}></Route>
         </Routes>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
-
-const App = withStyles(styles)(AppComponent);
 
 export default App;

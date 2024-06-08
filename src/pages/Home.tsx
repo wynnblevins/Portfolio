@@ -4,10 +4,11 @@ import { ConnectSection, MainSection } from '../components'
 
 const styles = {
   homeContainer: {
-    height: "100%"
+    height: "100%",
+    marginTop: "70px"
   },
   mainSection: {
-    height: "100%"
+    height: "100%",
   },
   connectSection: {
     height: "100%"
