@@ -16,7 +16,7 @@ const styles = {
     marginBottom: "20px",
     marginLeft: "10px",
     marginRight: "10px",
-    height: "130px"
+    height: "100px"
   },
   connectHeader: {
     paddingTop: "20px",
