@@ -1,5 +1,5 @@
 import React from 'react';
-import { WithStyles, withStyles, Grid, Container } from '@material-ui/core';
+import { WithStyles, withStyles, Grid } from '@material-ui/core';
 import { ConnectSection, MainSection } from '../components'
 import { Panel } from '../components/Panel';
 

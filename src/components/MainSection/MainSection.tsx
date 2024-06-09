@@ -28,7 +28,7 @@ const styles = {
 
 const MainSectionBase = (props: MainSectionProps) => {
   const { classes } = props; 
-  
+
   return (
     <div className={classes.mainWrapper}>
       <div>
@@ -40,7 +40,8 @@ const MainSectionBase = (props: MainSectionProps) => {
           In his spare time, Wynn enjoys playing his guitar and building various electronics projects. Wynn currently resides in Midlothian, Virginia 
           with his wife Holly and their two cats Breeze and Wobbles.</p>
       </div>
-      <p className={classes.bioText}>If you're interested in hiring Wynn, please feel free to download a copy of his resume using the link below.</p>
+      <p className={classes.bioText}>If you're interested in hiring Wynn, please feel free to download a copy of his resume using <a href="./RobertBlevins_Resume.docx" download>this link</a>.  
+        Also, feel free to browse and try out some of the example applications over on the <a href="/portfolio/demos">demos page</a>.</p>
     </div>
   );
 };
