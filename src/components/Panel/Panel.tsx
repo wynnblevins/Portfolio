@@ -1,7 +1,7 @@
 import React, { ReactElement, ReactNode, ReactPortal } from "react";
 import { WithStyles, withStyles } from "@material-ui/core";
 
-interface PanelProps extends WithStyles {
+interface PanelProps extends WithStyles, React.HTMLAttributes<HTMLDivElement> {
   headerText: string;
   children: ReactNode
 }
@@ -9,11 +9,16 @@ interface PanelProps extends WithStyles {
 const styles = {
   pannelWrapper: {
     backgroundColor: "white",
-    padding: "10px"
+    padding: "1%",
+    width: "100%"
+  },
+  panelHeaderWrapper: {
+    textAlign: "left" as const,
+    borderBottom: "solid 1px black",
+    
   },
   panelHeader: {
-    textAlign: "left" as const,
-    marginLeft: "3%"
+    marginLeft: "20px"
   },
   panelBody: {}
 };
@@ -22,8 +27,10 @@ const PanelComponent = (props: PanelProps) => {
   const { classes, headerText, children } = props;
 
   return (
-    <div className={classes.pannelWrapper}>
-      <h1 className={classes.panelHeader}>{ headerText }</h1>
+    <div className={classes.pannelWrapper} {...props}>
+      <div className={classes.panelHeaderWrapper}>
+        <h1 className={classes.panelHeader}>{ headerText }</h1>
+      </div>      
       <div className={classes.panelBody}>{ children }</div>
     </div>
   )

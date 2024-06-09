@@ -12,16 +12,14 @@ import brainImg from "../images/brain-resized.png";
 import starWarsImg from "../images/star_wars_logo_resized.png";
 import giphyLogoImg from "../images/giphy_logo_resized.png";
 import computerVisionImg from "../images/eye.jpg";
+import { Panel } from '../components/Panel';
 
 interface Props extends WithStyles {};
 
 const styles = {
   demosContainer: {
-    paddingLeft: "40px",
-    paddingRight: "40px",
-    marginLeft: "15px",
-    width: "auto",
-    marginTop: "70px"
+    margin: "3%",
+    paddingRight: "3%"
   },
   demoBox: {
     marginTop: "40px"
@@ -98,15 +96,19 @@ const DemosBase = (props: Props) => {
   }, []);
 
   return (
-    <Grid container className={classes.demosContainer} >
-      {demos.map((example: Demo) => {
-        return (
-          <Grid xs={12} md={6} lg={4} className={classes.demoBox}>
-            <DemoSquare demo={example}></DemoSquare>
-          </Grid>
-        );
-      })}
-    </Grid>
+    <div className={classes.demosContainer}>
+      <Panel headerText="Demos">
+        <Grid container>
+          {demos.map((example: Demo) => {
+            return (
+              <Grid xs={12} md={6} lg={4} className={classes.demoBox}>
+                <DemoSquare demo={example}></DemoSquare>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Panel>
+    </div>
   );
 }
 
