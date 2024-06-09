@@ -12,14 +12,17 @@ const styles = {
   bioText: {
     lineHeight: "2.0",
     textAlign: "left" as const,
-    margin: "20px"
+    margin: "3%"
   },
   aboutHeader: {
-    paddingTop: "20px",
+    paddingTop: "3%",
+    textAlign: "left" as const,
+    margin: "3%"
   },
   profilePic: {
     float: "left" as const,
-    margin: "20px"
+    marginRight: "3%",
+    marginLeft: "3%"
   }
 };
 
