@@ -31,7 +31,6 @@ const MainSectionBase = (props: MainSectionProps) => {
   
   return (
     <div className={classes.mainWrapper}>
-      <h1 className={classes.aboutHeader}>About</h1>
       <div>
         <img className={classes.profilePic} src={profilePic} alt="picture of Wynn Blevins"></img>
         <p className={classes.bioText}>Robert (Wynn) Blevins is a software developer from Lynchburg Virginia. After graduating from Lynchburg College, 

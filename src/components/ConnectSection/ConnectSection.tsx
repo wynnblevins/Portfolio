@@ -27,7 +27,6 @@ const ConnectSectionBase = (props: ConnectSectionProps) => {
   
   return (
     <div className={classes.connectWrapper}>
-      <h1 className={classes.connectHeader}>Connect With Me</h1>
       <img className={classes.socialMediaLogo} src={linkededInLogoImg} alt="LinkedIn Logo"></img>
       <img className={classes.socialMediaLogo} src={githubLogoImg} alt="Github Logo"></img>
       <img className={classes.socialMediaLogo} src={stackOverflowLogoImg} alt="Stackoverflow Logo"></img>

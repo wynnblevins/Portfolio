@@ -1,10 +1,12 @@
 import React from 'react';
 import { WithStyles, withStyles, Grid, Container } from '@material-ui/core';
 import { ConnectSection, MainSection } from '../components'
+import { Panel } from '../components/Panel';
 
 const styles = {
   homeContainer: {
     height: "100%",
+    padding: "3%"
   },
   mainSection: {
     height: "100%",
@@ -22,16 +24,16 @@ const HomeComponent = (props: HomeProps) => {
   const { classes } = props;
   
   return (
-    <Grid container className={classes.homeContainer} spacing={6}>
-      <Grid item xs={12} sm={8}>
-        <div className={classes.mainSection}>
+    <Grid container spacing={6} className={classes.homeContainer}>
+      <Grid item xs={12} sm={8}>        
+        <Panel headerText="About">
           <MainSection></MainSection>
-        </div>
+        </Panel>
       </Grid>
       <Grid item xs={12} sm={4}>
-        <div className={classes.connectSection}>
+        <Panel headerText='Connect With Me'>
           <ConnectSection></ConnectSection>
-        </div>
+        </Panel>
       </Grid>
     </Grid>
   );
