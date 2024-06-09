@@ -9,13 +9,12 @@ interface PanelProps extends WithStyles, React.HTMLAttributes<HTMLDivElement> {
 const styles = {
   pannelWrapper: {
     backgroundColor: "white",
-    padding: "1%",
+    padding: "3px",
     width: "100%"
   },
   panelHeaderWrapper: {
     textAlign: "left" as const,
     borderBottom: "solid 1px black",
-    
   },
   panelHeader: {
     marginLeft: "20px"
