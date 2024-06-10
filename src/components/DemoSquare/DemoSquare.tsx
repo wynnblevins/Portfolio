@@ -13,8 +13,9 @@ export interface Demo {
 
 const styles = {
   demoSquare: {
-    height: "320px",
-    width: "300px"
+    height: "200px",
+    width: "200px",
+    border: "2px solid #4aaaa5"
   },
   demoSquareImg: {
     height: "200px !important",
@@ -22,7 +23,14 @@ const styles = {
   },
   demoSquareA: {
     height: "200px",
-    width: "200px"
+    width: "200px",
+    color: "white"
+  },
+  demoLabel: {
+    position: "absolute" as const,
+    width: "200px",
+    backgroundColor: "#4aaaa5",
+    marginTop: "10px"
   }
 }
 
@@ -32,7 +40,7 @@ const DemoSquareBase = (props: Props) => {
   return (
     <div className={classes.demoSquare} key={demo.url}>
       <a className={classes.demoSquareA} href={demo.url}>
-        <p>{demo.label}</p>
+        <p className={classes.demoLabel}>{demo.label}</p>
         <img className={classes.demoSquareImg} src={demo.image}></img>
       </a>
     </div>

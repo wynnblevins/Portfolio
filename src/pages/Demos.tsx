@@ -21,6 +21,10 @@ const styles = {
     margin: "3%",
     paddingRight: "3%"
   },
+  innerDemosContainer: {
+    paddingBottom: "20px",
+    paddingLeft: "70px"
+  },
   demoBox: {
     marginTop: "40px"
   }
@@ -98,10 +102,10 @@ const DemosBase = (props: Props) => {
   return (
     <div className={classes.demosContainer}>
       <Panel headerText="Demos">
-        <Grid container>
+        <Grid container className={classes.innerDemosContainer}>
           {demos.map((example: Demo) => {
             return (
-              <Grid xs={12} md={6} lg={4} className={classes.demoBox}>
+              <Grid xs={12} sm={6} md={4} lg={3} className={classes.demoBox}>
                 <DemoSquare demo={example}></DemoSquare>
               </Grid>
             );
