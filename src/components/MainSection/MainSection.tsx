@@ -41,7 +41,7 @@ const MainSectionBase = (props: MainSectionProps) => {
           with his wife Holly and their two cats Breeze and Wobbles.</p>
       </div>
       <p className={classes.bioText}>If you're interested in hiring Wynn, please feel free to download a copy of his resume using <a href="./RobertBlevins_Resume.docx" download>this link</a>.  
-        Also, feel free to browse and try out some of the example applications over on the <a href="/portfolio/demos">demos page</a>.</p>
+        Also, feel free to browse and try out some of the example applications over on the <a href="/#/Demos">demos page</a>.</p>
     </div>
   );
 };
