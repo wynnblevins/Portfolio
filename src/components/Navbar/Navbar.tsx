@@ -77,7 +77,7 @@ const NavbarBase = (props: NavbarProps) => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link style={{ color: "black", textDecoration: "none" }} to={`/portfolio/${page}`}>{page}</Link>
+                    <Link style={{ color: "black", textDecoration: "none" }} to={`${page}`}>{page}</Link>
                   </MenuItem>
                 ))}
               </Menu>
@@ -89,7 +89,7 @@ const NavbarBase = (props: NavbarProps) => {
                   key={page}
                   onClick={handleCloseNavMenu}
                 >
-                  <Link style={{ color: "white", textDecoration: "none" }} to={`/portfolio/${page}`}>{page}</Link>
+                  <Link style={{ color: "white", textDecoration: "none" }} to={`${page}`}>{page}</Link>
                 </Button>
               ))}
             </Box>
