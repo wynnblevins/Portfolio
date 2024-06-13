@@ -24,7 +24,7 @@ const HomeComponent = (props: HomeProps) => {
   const { classes } = props;
   
   return (
-    <Grid container spacing={6} className={classes.homeContainer}>
+    <Grid container className={classes.homeContainer}>
       <Grid item xs={12} sm={8}>        
         <Panel headerText="About">
           <MainSection></MainSection>
