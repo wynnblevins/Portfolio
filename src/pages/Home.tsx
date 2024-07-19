@@ -14,7 +14,7 @@ const styles = {
   },
   connectSection: {
     height: "100%",
-    marginRight: "10%"
+    marginRight: "5%"
   }
 }
 
