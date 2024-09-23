@@ -40,7 +40,7 @@ const MainSectionBase = (props: MainSectionProps) => {
           In his spare time, Wynn enjoys playing his guitar and building various electronics projects. Wynn currently resides in Midlothian, Virginia 
           with his wife Holly and their two cats Breeze and Wobbles.</p>
       </div>
-      <p className={classes.bioText}>If you're interested in hiring Wynn, please feel free to download a copy of his resume using <a href="./Wynn_Blevins_ResumeV3.docx" download>this link</a>.  
+      <p className={classes.bioText}>If you're interested in hiring Wynn, please feel free to download a copy of his resume using <a href="./Wynn_Blevins_Resume.pdf" download>this link</a>.  
         Also, feel free to browse and try out some of the example applications over on the <a href="/portfolio/#/Demos">demos page</a>.</p>
     </div>
   );
