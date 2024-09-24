@@ -13,6 +13,7 @@ import starWarsImg from "../images/star_wars_logo_resized.png";
 import giphyLogoImg from "../images/giphy_logo_resized.png";
 import computerVisionImg from "../images/eye.jpg";
 import todoListImg from '../images/ToDoList.png';
+import opAmpImg from "../images/non-inverting-amplifier.png";
 import { Panel } from '../components/Panel';
 
 interface Props extends WithStyles {};
@@ -85,6 +86,11 @@ const DemosBase = (props: Props) => {
         url: 'https://next-todos-a9ky2id3l-wynn-blevins-projects.vercel.app',
         label: 'To Do List',
         image: todoListImg
+      },
+      {
+        url: 'https://wynnblevins.github.io/op-amp-calculator',
+        label: 'Op Amp Calculator',
+        image: opAmpImg
       }
     ]
   )
