@@ -10,7 +10,8 @@ const styles = {
   pannelWrapper: {
     backgroundColor: "white",
     padding: "3px",
-    width: "97%"
+    width: "97%",
+    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
   },
   panelHeaderWrapper: {
     textAlign: "left" as const,

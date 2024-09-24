@@ -6,16 +6,8 @@ import { Panel } from '../components/Panel';
 const styles = {
   homeContainer: {
     height: "100%",
-    padding: "3%"
+    padding: "3%",
   },
-  mainSection: {
-    height: "100%",
-    marginLeft: "10%"
-  },
-  connectSection: {
-    height: "100%",
-    marginRight: "5%"
-  }
 }
 
 interface HomeProps extends WithStyles {}
