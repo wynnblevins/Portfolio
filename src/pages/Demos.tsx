@@ -64,11 +64,6 @@ const DemosBase = (props: Props) => {
         image: triviaImg
       },
       {
-        url: 'https://wynnblevins.github.io/Hangman-Game/',
-        label: 'Hangman',
-        image: hangmanImg
-      },
-      {
         url: 'https://github.com/wynnblevins/LiriNodeApp',
         label: 'LIRI',
         image: brainImg
@@ -109,7 +104,12 @@ const DemosBase = (props: Props) => {
           url: 'https://wynnblevins.github.io/object-detection',
           label: 'Object Detection',
           image: computerVisionImg
-        }
+        },
+        {
+          url: 'https://wynnblevins.github.io/Hangman-Game/',
+          label: 'Hangman',
+          image: hangmanImg
+        },
       ];
       const demosWithDesktopOnlyApps = [...demos, ...desktopOnlyApps];
   
