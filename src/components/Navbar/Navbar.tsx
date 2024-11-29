@@ -18,7 +18,12 @@ import { userIsOnMobile } from '../../utils/mobileDetectionService';
 const styles = {
   appBar: {
     backgroundColor: "#4aaaa5",
+    paddingRight: "2%"
   },
+  navbarContainer: {
+    marginLeft: "3%",
+    marginRight: "-3%"
+  }
 }
 
 interface NavbarProps extends WithStyles {}
@@ -45,57 +50,55 @@ const NavbarBase = (props: NavbarProps) => {
   };
 
   return (
-    <AppBar position="static" className={classes.appBar}>
-      <Container maxWidth="xl" className={classes.container}>
-        <Toolbar disableGutters>
-          { userIsOnMobile() ? (
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              {/* This is the mobile toolbar interface */}
-              <IconButton
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-              >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link style={{ color: "black", textDecoration: "none" }} to={`${page}`}>{page}</Link>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>) : (
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {/* This is the desktop browser toolbar interface */}
+    <AppBar position="static" className={classes.appBar}>    
+      <Toolbar disableGutters >
+        { userIsOnMobile() ? (
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            {/* This is the mobile toolbar interface */}
+            <IconButton
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+            >
               {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                >
-                  <Link style={{ color: "white", textDecoration: "none" }} to={`${page}`}>{page}</Link>
-                </Button>
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Link style={{ color: "black", textDecoration: "none" }} to={`${page}`}>{page}</Link>
+                </MenuItem>
               ))}
-            </Box>
-          )}
-        </Toolbar>
-      </Container>
+            </Menu>
+          </Box>) : (
+          <Box className={classes.navbarContainer} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {/* This is the desktop browser toolbar interface */}
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+              >
+                <Link style={{ color: "white", textDecoration: "none" }} to={`${page}`}>{page}</Link>
+              </Button>
+            ))}
+          </Box>
+        )}
+      </Toolbar>
     </AppBar>
   );
 }
