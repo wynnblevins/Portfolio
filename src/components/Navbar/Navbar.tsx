@@ -17,7 +17,10 @@ import { userIsOnMobile } from '../../utils/mobileDetectionService';
 
 const styles = {
   appBar: {
-    backgroundColor: "#4aaaa5"
+    backgroundColor: "#4aaaa5",
+  },
+  container: {
+    margin: "0% 0% 0% 2%"
   }
 }
 
@@ -46,7 +49,7 @@ const NavbarBase = (props: NavbarProps) => {
 
   return (
     <AppBar position="static" className={classes.appBar}>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" className={classes.container}>
         <Toolbar disableGutters>
           { userIsOnMobile() ? (
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
