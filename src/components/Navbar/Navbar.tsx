@@ -19,9 +19,6 @@ const styles = {
   appBar: {
     backgroundColor: "#4aaaa5",
   },
-  container: {
-    margin: "0% 0% 0% 2%"
-  }
 }
 
 interface NavbarProps extends WithStyles {}
