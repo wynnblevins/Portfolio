@@ -20,9 +20,12 @@ const styles = {
     backgroundColor: "#4aaaa5",
     paddingRight: "2%"
   },
-  navbarContainer: {
+  navbarBox: {
     marginLeft: "3%",
     marginRight: "-3%"
+  },
+  container: {
+    margin: "0px 0px 0px 1%"
   }
 }
 
@@ -50,55 +53,57 @@ const NavbarBase = (props: NavbarProps) => {
   };
 
   return (
-    <AppBar position="static" className={classes.appBar}>    
-      <Toolbar disableGutters >
-        { userIsOnMobile() ? (
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            {/* This is the mobile toolbar interface */}
-            <IconButton
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link style={{ color: "black", textDecoration: "none" }} to={`${page}`}>{page}</Link>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>) : (
-          <Box className={classes.navbarContainer} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {/* This is the desktop browser toolbar interface */}
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+    <AppBar position="static" className={classes.appBar}>
+      <Container className={classes.container}>
+        <Toolbar disableGutters >
+          { userIsOnMobile() ? (
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              {/* This is the mobile toolbar interface */}
+              <IconButton
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
               >
-                <Link style={{ color: "white", textDecoration: "none" }} to={`${page}`}>{page}</Link>
-              </Button>
-            ))}
-          </Box>
-        )}
-      </Toolbar>
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+              >
+                {pages.map((page) => (
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Link style={{ color: "black", textDecoration: "none" }} to={`${page}`}>{page}</Link>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>) : (
+            <Box className={classes.navbarBox} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              {/* This is the desktop browser toolbar interface */}
+              {pages.map((page) => (
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                >
+                  <Link style={{ color: "white", textDecoration: "none" }} to={`${page}`}>{page}</Link>
+                </Button>
+              ))}
+            </Box>
+          )}
+        </Toolbar>
+      </Container>          
     </AppBar>
   );
 }
