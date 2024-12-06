@@ -57,7 +57,7 @@ const NavbarBase = (props: NavbarProps) => {
       <Container className={classes.container}>
         <Toolbar disableGutters >
           { userIsOnMobile() ? (
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none' } }}>
               {/* This is the mobile toolbar interface */}
               <IconButton
                 aria-label="account of current user"
@@ -90,7 +90,7 @@ const NavbarBase = (props: NavbarProps) => {
                 ))}
               </Menu>
             </Box>) : (
-            <Box className={classes.navbarBox} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box className={classes.navbarBox} sx={{ flexGrow: 1, display: { xs: 'none' } }}>
               {/* This is the desktop browser toolbar interface */}
               {pages.map((page) => (
                 <Button
