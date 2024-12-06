@@ -21,8 +21,9 @@ interface Props extends WithStyles {};
 
 const styles = {
   demosContainer: {
-    margin: "3%",
-    paddingRight: "3%"
+    height: "100%",
+    padding: "2% 2% 0% 2%",
+    marginBottom: "3%"
   },
   innerDemosContainer: {
     paddingBottom: "20px",

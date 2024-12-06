@@ -11,7 +11,8 @@ const styles = {
     backgroundColor: "white",
     padding: "3px",
     width: "97%",
-    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
+    marginTop: "10px"
   },
   panelHeaderWrapper: {
     textAlign: "left" as const,

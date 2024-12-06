@@ -32,30 +32,28 @@ const ConnectSectionBase = (props: ConnectSectionProps) => {
   const { classes } = props; 
   
   return (
-    <div className={classes.connectWrapper}>
-      <Grid container>
-        <Grid item xs={12} sm={12} md={6} xl={3}>
-          <a href="https://www.linkedin.com/in/wynn-blevins-93924594/">
-            <img className={classes.socialMediaLogo} src={linkededInLogoImg} alt="LinkedIn Logo"></img>
-          </a>
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} xl={3}>
-          <a href="https://github.com/wynnblevins">
-            <img className={classes.socialMediaLogo} src={githubLogoImg} alt="Github Logo"></img>  
-          </a>
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} xl={3}>
-          <a href="https://stackoverflow.com/users/1226768/wynn">
-            <img className={classes.socialMediaLogo} src={stackOverflowLogoImg} alt="Stackoverflow Logo"></img>  
-          </a>
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} xl={3}>
-          <a href="https://www.hackerrank.com/profile/wynnblevins">
-            <img className={classes.socialMediaLogo} src={hackerRankLogo} alt="HackerRank Logo"></img>  
-          </a>
-        </Grid>
+    <Grid container className={classes.connectWrapper}>
+      <Grid item xs={12} sm={12} md={6} xl={3}>
+        <a href="https://www.linkedin.com/in/wynn-blevins-93924594/">
+          <img className={classes.socialMediaLogo} src={linkededInLogoImg} alt="LinkedIn Logo"></img>
+        </a>
       </Grid>
-    </div>
+      <Grid item xs={12} sm={12} md={6} xl={3}>
+        <a href="https://github.com/wynnblevins">
+          <img className={classes.socialMediaLogo} src={githubLogoImg} alt="Github Logo"></img>  
+        </a>
+      </Grid>
+      <Grid item xs={12} sm={12} md={6} xl={3}>
+        <a href="https://stackoverflow.com/users/1226768/wynn">
+          <img className={classes.socialMediaLogo} src={stackOverflowLogoImg} alt="Stackoverflow Logo"></img>  
+        </a>
+      </Grid>
+      <Grid item xs={12} sm={12} md={6} xl={3}>
+        <a href="https://www.hackerrank.com/profile/wynnblevins">
+          <img className={classes.socialMediaLogo} src={hackerRankLogo} alt="HackerRank Logo"></img>  
+        </a>
+      </Grid>
+    </Grid>
   );
 };
 
