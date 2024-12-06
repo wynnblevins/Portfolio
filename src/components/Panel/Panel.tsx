@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode, ReactPortal } from "react";
+import React, { ReactNode } from "react";
 import { WithStyles, withStyles } from "@material-ui/core";
 
 interface PanelProps extends WithStyles, React.HTMLAttributes<HTMLDivElement> {

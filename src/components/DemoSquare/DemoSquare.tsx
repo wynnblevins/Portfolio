@@ -1,5 +1,5 @@
 import React from "react";
-import { WithStyles, createStyles, withStyles } from "@material-ui/core";
+import { WithStyles, withStyles } from "@material-ui/core";
 
 interface Props extends WithStyles {
   demo: Demo
@@ -41,7 +41,9 @@ const DemoSquareBase = (props: Props) => {
     <div className={classes.demoSquare} key={demo.url}>
       <a className={classes.demoSquareA} href={demo.url}>
         <p className={classes.demoLabel}>{demo.label}</p>
-        <img className={classes.demoSquareImg} src={demo.image}></img>
+        <img alt={`${demo.label} application link`} 
+          className={classes.demoSquareImg} 
+          src={demo.image}></img>
       </a>
     </div>
   )

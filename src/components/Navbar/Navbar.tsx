@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import { 
@@ -36,7 +36,7 @@ const pages = ['Home', 'Demos'];
 const NavbarBase = (props: NavbarProps) => {
   const { classes } = props;
 
-  const [mobile, setMobile] = React.useState<boolean>(false);
+  const [, setMobile] = React.useState<boolean>(false);
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
   useEffect(() => {
