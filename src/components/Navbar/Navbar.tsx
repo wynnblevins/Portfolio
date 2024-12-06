@@ -57,7 +57,7 @@ const NavbarBase = (props: NavbarProps) => {
       <Container className={classes.container}>
         <Toolbar disableGutters >
           { userIsOnMobile() ? (
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'flex' } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'flex', xl: 'flex' } }}>
               {/* This is the mobile toolbar interface */}
               <IconButton
                 aria-label="account of current user"
