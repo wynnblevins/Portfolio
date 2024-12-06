@@ -21,8 +21,8 @@ const styles = {
     paddingRight: "2%"
   },
   navbarBox: {
-    marginLeft: "3%",
-    marginRight: "-3%"
+    marginLeft: "1%",
+    marginRight: "-1%"
   },
   container: {
     margin: "0px 0px 0px 1%"
