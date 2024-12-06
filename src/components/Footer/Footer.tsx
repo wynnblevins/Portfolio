@@ -1,5 +1,5 @@
-import { WithStyles, withStyles } from "@material-ui/core";
 import React from "react";
+import { WithStyles, withStyles } from "@material-ui/core";
 
 interface FooterProps extends WithStyles {}
 
