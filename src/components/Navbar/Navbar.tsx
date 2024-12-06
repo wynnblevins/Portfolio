@@ -90,7 +90,7 @@ const NavbarBase = (props: NavbarProps) => {
                 ))}
               </Menu>
             </Box>) : (
-            <Box className={classes.navbarBox} sx={{ flexGrow: 1, display: { xs: 'none', sm: 'none' } }}>
+            <Box className={classes.navbarBox} sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'flex', xl: 'flex' } }}>
               {/* This is the desktop browser toolbar interface */}
               {pages.map((page) => (
                 <Button
