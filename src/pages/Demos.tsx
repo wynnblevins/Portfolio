@@ -80,7 +80,7 @@ const DemosBase = (props: Props) => {
         image: giphyLogoImg
       },
       {
-        url: 'https://next-todos-c3ewwnhw9-wynn-blevins-projects.vercel.app/',
+        url: 'https://next-todos-80sgg88pa-wynn-blevins-projects.vercel.app/',
         label: 'To Do List',
         image: todoListImg
       },
