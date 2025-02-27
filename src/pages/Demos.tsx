@@ -15,6 +15,7 @@ import computerVisionImg from "../images/eye.jpg";
 import todoListImg from '../images/ToDoList.png';
 import opAmpImg from "../images/non-inverting-amplifier.png";
 import courseEnrollmentImg from "../images/course-enrollment.jpg";
+import kanbanImg from '../images/kanban.png';
 import { Panel } from '../components/Panel';
 
 interface Props extends WithStyles {};
@@ -93,6 +94,11 @@ const DemosBase = (props: Props) => {
         url: 'https://wynnblevins.github.io/course-enrollments-ui',
         label: 'Course Enrollments',
         image: courseEnrollmentImg
+      },
+      {
+        url: 'https://wynnblevins.github.io/kanban/',
+        label: 'Kanban',
+        image: kanbanImg
       }
     ]
   )
