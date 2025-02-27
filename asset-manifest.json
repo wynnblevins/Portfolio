@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c3e02e54.css",
-    "main.js": "/portfolio/static/js/main.970768e2.js",
+    "main.js": "/portfolio/static/js/main.9432926f.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/eye.jpg": "/portfolio/static/media/eye.8455fdaa0c854911d822.jpg",
     "static/media/PrimeNumbers.jpg": "/portfolio/static/media/PrimeNumbers.8d16f231a9c1824d5e5a.jpg",
@@ -13,16 +13,17 @@
     "static/media/fizzbuzz.jpg": "/portfolio/static/media/fizzbuzz.0cf38570afa91a82ed19.jpg",
     "static/media/MemoryGame.jpg": "/portfolio/static/media/MemoryGame.34c43dd8007570404ec9.jpg",
     "static/media/course-enrollment.jpg": "/portfolio/static/media/course-enrollment.ebeac072bfe72f06d48f.jpg",
+    "static/media/kanban.png": "/portfolio/static/media/kanban.5fb383c217d0ff490ff3.png",
     "static/media/star_wars_logo_resized.png": "/portfolio/static/media/star_wars_logo_resized.7d63b1c6551bb389357d.png",
     "static/media/brain-resized.png": "/portfolio/static/media/brain-resized.2c65b55cb39b1dee8a33.png",
     "static/media/gray_jean.png": "/portfolio/static/media/gray_jean.ced81a01ce1585470d52.png",
     "index.html": "/portfolio/index.html",
     "main.c3e02e54.css.map": "/portfolio/static/css/main.c3e02e54.css.map",
-    "main.970768e2.js.map": "/portfolio/static/js/main.970768e2.js.map",
+    "main.9432926f.js.map": "/portfolio/static/js/main.9432926f.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3e02e54.css",
-    "static/js/main.970768e2.js"
+    "static/js/main.9432926f.js"
   ]
 }
